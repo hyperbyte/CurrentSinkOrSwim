@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:CE_Regulator
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -135,7 +136,7 @@ Connection ~ 6900 4050
 Wire Wire Line
 	5600 2600 6600 2600
 Wire Wire Line
-	6900 2400 6900 1900
+	6900 1150 6900 2400
 Wire Wire Line
 	6900 1900 8000 1900
 $Comp
@@ -162,4 +163,54 @@ F 3 "" H 8700 3150 50  0000 C CNN
 	2    8700 3150
 	1    0    0    -1  
 $EndComp
+$Comp
+L LM2931 U?
+U 1 1 58826B38
+P 5800 1200
+F 0 "U?" H 5800 1637 60  0000 C CNN
+F 1 "LM2931" H 5800 1531 60  0000 C CNN
+F 2 "" H 5700 1200 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2931-n.pdf" H 5800 1650 60  0001 C CNN
+F 4 "9493417" H 5800 1500 60  0001 C CNN "Farnell"
+F 5 "LM2931CM" H 5800 1800 60  0001 C CNN "MPN"
+	1    5800 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1700 5650 1800
+Wire Wire Line
+	5300 1800 6100 1800
+Wire Wire Line
+	5750 1700 5750 1800
+Connection ~ 5750 1800
+Wire Wire Line
+	5850 1700 5850 1800
+Connection ~ 5850 1800
+Wire Wire Line
+	5950 1700 5950 1800
+Connection ~ 5950 1800
+$Comp
+L GND #PWR?
+U 1 1 58826CF8
+P 6100 1800
+F 0 "#PWR?" H 6100 1550 50  0001 C CNN
+F 1 "GND" H 6105 1627 50  0000 C CNN
+F 2 "" H 6100 1800 50  0000 C CNN
+F 3 "" H 6100 1800 50  0000 C CNN
+	1    6100 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1250 5300 1250
+Wire Wire Line
+	5300 1250 5300 1800
+Connection ~ 5650 1800
+Wire Wire Line
+	5350 1150 4750 1150
+Wire Wire Line
+	4750 1150 4750 1950
+Connection ~ 4750 1950
+Wire Wire Line
+	6250 1150 6900 1150
+Connection ~ 6900 1900
 $EndSCHEMATC
