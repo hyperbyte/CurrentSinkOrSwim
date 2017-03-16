@@ -34,7 +34,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -44,24 +44,17 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 1200 4800 1300 1950
-U 58CA5AFD
-F0 "Voltage Control" 60
-F1 "VoltageControl.sch" 60
-$EndSheet
-$Sheet
-S 900  2250 1400 1900
-U 58CA5B0B
-F0 "Current Control" 60
-F1 "CurrentControl.sch" 60
-F2 "FET_Drain" I R 2300 2900 60 
-F3 "FET_Gate" I R 2300 3150 60 
-$EndSheet
-$Sheet
-S 3000 2100 1100 1850
-U 58CA5B19
-F0 "Power Regulation" 60
-F1 "PowerRegulation.sch" 60
-$EndSheet
+$Comp
+L LMV358 U?
+U 1 1 58CA7E98
+P 4750 3350
+F 0 "U?" H 5091 3396 50  0000 L CNN
+F 1 "LMV358" H 5091 3305 50  0000 L CNN
+F 2 "" H 4750 3350 50  0000 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/LMV321-LMV358-LMV324-D.PDF" H 4750 3350 50  0001 C CNN
+F 4 "2531407" H 4750 3350 60  0001 C CNN "Farnell"
+F 5 "LMV358DR2G" H 4750 3350 60  0001 C CNN "MPN"
+	1    4750 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
